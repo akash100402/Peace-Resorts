@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peace Resort</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="">
+    <header class="p-8 bg-blue-400 flex justify-between items-center">
+      <div class="logo font-bold text-xl">
+        <span class="p-4 rounded-md bg-black text-white text-xl font-bold">Peace</span>
+        Resort
+      </div>
+
+      <ul class="flex justify-center items-center gap-10 font-semibold">
+        <a href="index.html" class="hover:text-white"><li>Home</li></a>
+        <a href="about.html" class="hover:text-white"><li>About Us</li></a>
+        <a href="dining.html" class="hover:text-white"><li>Dinings</li></a>
+        <a href="wedding.html" class="hover:text-white"><li>Wedding & Events</li></a>
+
+        <a href="offers.html" class="hover:text-white"> <li>Offers</li></a>
+        <a href="bookResort.html" class="hover:text-white"> <li>Book Resort</li></a>
+      </ul>
+    </header>
+    <main>
+      <div class="relative p-8 mt-4 w-full mx-auto overflow-hidden h-screen">
+        <div class="flex slides h-96 overflow-hidden">
+          <img
+            src="./assets/bunch-flowers-leaves-table.jpg"
+            alt="Image 1"
+            class="w-full"
+          />
+          <img
+            src="./assets/shine-wedding-altar-newlyweds-stands-backyard-decorated-with-balloons.jpg"
+            alt="Image 2"
+            class="w-full"
+          />
+          <img
+            src="./assets//pexels-christina-morillo-1181406.jpg"
+            alt="Image 3"
+            class="w-full"
+          />
+          <img
+            src="./assets/pexels-pixabay-262882.jpg"
+            alt="Image 4"
+            class="w-full"
+          />
+        </div>
+        <div class="logo mt-8 font-bold text-6xl flex justify-center items-center">
+          <span class="p-4 rounded-md bg-black text-white text-6xl font-bold">Peace</span>
+          Resort
+        </div>
+
+        <button
+          class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-transparent border-none text-white text-2xl px-3 py-1"
+          onclick="changeSlide(-1)"
+        >
+          &#10094;
+        </button>
+        <button
+          class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-transparent border-none text-white text-2xl px-3 py-1"
+          onclick="changeSlide(1)"
+        >
+          &#10095;
+        </button>
+      </div>
+
+      <div
+        class="flex px-8 py-10 flex-col justify-center items-center text-center text-2xl gap-10 h-screen bg-blue-400"
+      >
+        <h2 class="font-bold text-6xl uppercase mb-4 text-white">
+          Exquisite Hotel Wedding Venues Across South India
+        </h2>
+        <p>
+          Peace Hotels & Resorts extends its services to help you celebrate the
+          highlights of your life with us. We offer a melange of extraordinary
+          and charming wedding venues where you can host formal and informal
+          events. Our immaculate designs, impeccable services and our
+          well-earned reputation adds a dash of glam to your special social
+          celebration venue in ECR, Bangalore and Vailankanni, leaving your
+          guests and you with indelible memories.
+        </p>
+        <p>
+          Peace Hotels & Resorts is about creating a space for guests to embrace
+          a day of celebrating milestones. Ocean Pearl Convention Hall - our
+          grand and expansive banquet hall in ECR, Chennai, is located in MGM
+          Beach Resorts that allure guests from across the globe. Patrons who
+          are looking for a place to celebrate a beach wedding destination in
+          Chennai or, exhibitions, corporate events and other affairs can book
+          the phenomenal and capacious banquet hall in ECR. Ocean Pearl
+          Convention Hall is the perfect arena for you to plan social affairs
+          and parties!
+        </p>
+        <p>
+          Our properties across the country have borne witness to several
+          successful ceremonies, weddings, parties and conferences. Allow us to
+          enliven your special achievements, or the beginnings of new chapters
+          in your life by hosting you and your near and dear ones at some of the
+          best banquet halls in Chennai, Bangalore and other locations in South
+          India.
+        </p>
+      </div>
+
+      <div class="h-screen flex justify-center flex-col p-8 items-center">
+        <h2 class="font-bold text-4xl uppercase mb-20 text-blue-400">
+          Choose Your Venue
+        </h2>
+
+        <div class="flex justify-between items-center gap-32">
+          <div
+            class="w-72 h-80 text-xl border-2 border-gray-200 hover:bg-yellow-100 flex flex-col items-center p-4 gap-8"
+          >
+            <img src="./assets/light-garden-luxury-pool-nature.jpg" alt="" />
+            <p>Peace Resorts, Bangalore</p>
+          </div>
+          <div
+            class="w-72 h-80 text-xl border-2 border-gray-200 hover:bg-yellow-100 flex flex-col items-center p-4 gap-8"
+          >
+            <img
+              src="./assets/umbrella-chair-beautiful-beach-sea-sunrise-time-travel-vacation.jpg"
+              alt=""
+            />
+            <p>Peace Resorts, Chennai</p>
+          </div>
+          <div
+            class="w-72 h-80 text-xl border-2 border-gray-200 hover:bg-yellow-100 flex flex-col items-center p-4 gap-8"
+          >
+            <img src="./assets/hotel-reflected-water.jpg" alt="" />
+            <p>Peace Resorts, Kerala</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="h-screen flex flex-col justify-center items-center bg-blue-400"
+      >
+        <h2 class="text-4xl uppercase mt-2 text-white font-bold mb-4">
+          Enquiry Form
+        </h2>
+        <p class="text-xl mb-2">
+          Drop us a query if you are interested in booking our venues and we
+          will get back to you in the wink of an eye!
+        </p>
+
+        <div class="w-96 mx-auto bg-white shadow-md p-8 mt-6 rounded-md">
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium text-gray-700"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 border-2 py-2 rounded-md"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 border-2 py-2 rounded-md"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="phone" class="block text-sm font-medium text-gray-700"
+                >Phone</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 border-2 py-2 rounded-md"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="venue" class="block text-sm font-medium text-gray-700"
+                >Venue</label
+              >
+              <select
+                id="venue"
+                name="venue"
+                class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              >
+                <option value="venue1">Venue 1</option>
+                <option value="venue2">Venue 2</option>
+                <option value="venue3">Venue 3</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label for="query" class="block text-sm font-medium text-gray-700"
+                >Query</label
+              >
+              <textarea
+                id="query"
+                name="query"
+                rows="4"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 border-2 py-2 rounded-md"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center w-full px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="h-screen flex flex-col justify-center items-center">
+        <h2 class="mt-24 text-2xl mb-20 font-bold">NEWSLETTER</h2>
+        <div class="flex justify-center items-center w-22">
+          <input
+            class="px-8 p-4 border-2 border-gray-300"
+            type="email"
+            name="mail"
+            id=""
+            placeholder="Enter your email here"
+          />
+          <button
+            class="px-8 p-4 bg-blue-400 border-2 border-gray-300 text-white font-semibold"
+          >
+            Subscribe
+          </button>
+        </div>
+        <div
+          class="flex justify-around items-center mt-24 w-full h-full bg-gray-200"
+        >
+          <div>
+            <div class="logo mt-8 font-bold text-4xl flex justify-center items-center">
+              <span class="p-4 rounded-md bg-black text-white text-4xl font-bold"
+                >Peace</span
+              >
+              Resort
+            </div>
+          </div>
+          <div class="text-xl text-center gap-8">
+            <p>Peace Resorts and Hotels</p>
+            <p>Peace Entertainment Pvt & Ltd</p>
+            <p>
+              Peace Centre, No: 1, 9th Street, R.K Salai, Mylapore, Chennai -
+              600004.
+            </p>
+            <pre>📞 8949343948      📫 peaceresorts@gmail.com</pre>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-8">
+            <h4 class="text-xl font-bold">FOLLOW US</h4>
+            <div class="flex flex-wrap">
+              <img src="./assets/icons/icons8-facebook-48.png" alt="" />
+              <img src="./assets/icons/icons8-instagram-48.png" alt="" />
+              <img src="./assets/icons/icons8-linkedin-48.png" alt="" />
+              <img src="./assets/icons/icons8-twitter-48.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>

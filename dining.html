@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dining Resort</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+
+
+    .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cards .red {
+  background-color: #4a9eff;
+}
+
+.cards .blue {
+ background-color: #4a9eff;
+}
+
+.cards .green {
+    background-color: #4a9eff;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 300px;
+  width: 1000px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+  </style>
+  <body class="">
+   <header class="p-8 bg-blue-400 flex justify-between items-center">
+      <div class="logo font-bold text-xl">
+        <span class="p-4 rounded-md bg-black text-white text-xl font-bold">Peace</span>
+        Resort
+      </div>
+
+      <ul class="flex justify-center items-center gap-10 font-semibold">
+        <a href="index.html" class="hover:text-white"><li>Home</li></a>
+        <a href="about.html" class="hover:text-white"><li>About Us</li></a>
+        <a href="dining.html" class="hover:text-white"><li>Dinings</li></a>
+        <a href="wedding.html" class="hover:text-white"><li>Wedding & Events</li></a>
+
+        <a href="offers.html" class="hover:text-white"> <li>Offers</li></a>
+        <a href="bookResort.html" class="hover:text-white"> <li>Book Resort</li></a>
+      </ul>
+    </header>
+    <main>
+
+        <div
+        class="flex flex-col justify-center items-center h-screen text-center gap-24 bg-gray-200"
+      >
+        <div>
+          <div
+            class="logo font-bold  text-8xl flex justify-center items-center"
+          >
+            <span class="p-4 rounded-md bg-blue-400 text-white text-6xl font-bold"
+              >Book Resort</span
+            >
+            for Dining
+          </div>
+          
+            <p class="font-bold text-4xl">at</p>
+          
+        </div>
+        <div
+          class="logo  font-bold text-6xl flex justify-center items-center"
+        >
+          <span class="p-4 rounded-md bg-black text-white text-6xl font-bold">Peace</span>
+          Resort
+        </div>
+      </div>
+     <div class="all-cards flex w-full justify-center items-center mt-24">
+        <div class="cards">
+    <div class="card red">
+        <p class="tip">Beach Resorts</p>
+        <p class="second-text">Chennai, Tamilnadu</p>
+        <a href="bookResort.html"><button class="py-4 rounded-full bg-black text-white hover:bg-white hover:text-black px-10">Book Resort</button></a>
+    </div>
+    <div class="card blue">
+        <p class="tip">Luxury Resorts</p>
+        <p class="second-text">Bangalore, Karnataka</p>
+                <a href="bookResort.html"><button class="py-4 rounded-full bg-black text-white hover:bg-white hover:text-black px-10">Book Resort</button></a>
+
+    </div>
+    <div class="card green">
+        <p class="tip">Boat Resorts</p>
+        <p class="second-text">Kochi, Kerala</p>
+                <a href="bookResort.html"><button class="py-4 rounded-full bg-black text-white hover:bg-white hover:text-black px-10">Book Resort</button></a>
+
+    </div>
+</div>
+     </div>
+    
+
+      <footer class="h-screen flex flex-col justify-center items-center">
+        <h2 class="mt-24 text-2xl mb-20 font-bold">NEWSLETTER</h2>
+        <div class="flex justify-center items-center w-22">
+          <input
+            class="px-8 p-4 border-2 border-gray-300"
+            type="email"
+            name="mail"
+            id=""
+            placeholder="Enter your email here"
+          />
+          <button
+            class="px-8 p-4 bg-blue-400 border-2 border-gray-300 text-white font-semibold"
+          >
+            Subscribe
+          </button>
+        </div>
+        <div
+          class="flex justify-around items-center mt-24 w-full h-full bg-gray-200"
+        >
+          <div>
+            <div
+              class="logo mt-8 font-bold text-4xl flex justify-center items-center"
+            >
+              <span class="p-4 rounded-md bg-black text-white text-4xl font-bold"
+                >Peace</span
+              >
+              Resort
+            </div>
+          </div>
+          <div class="text-xl text-center gap-8">
+            <p>Peace Resorts and Hotels</p>
+            <p>Peace Entertainment Pvt & Ltd</p>
+            <p>
+              Peace Centre, No: 1, 9th Street, R.K Salai, Mylapore, Chennai -
+              600004.
+            </p>
+            <pre>📞 8949343948      📫 peaceresorts@gmail.com</pre>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-8">
+            <h4 class="text-xl font-bold">FOLLOW US</h4>
+            <div class="flex flex-wrap">
+              <img src="./assets/icons/icons8-facebook-48.png" alt="" />
+              <img src="./assets/icons/icons8-instagram-48.png" alt="" />
+              <img src="./assets/icons/icons8-linkedin-48.png" alt="" />
+              <img src="./assets/icons/icons8-twitter-48.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
